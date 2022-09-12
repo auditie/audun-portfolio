@@ -1,0 +1,21 @@
+@use '../../styles/global';
+
+.project {
+    padding: 1vh 2vw;
+    width: 33%.33;
+    height: auto;
+    // border: 1px solid black;
+
+    &__image {
+        height: 25vh;
+        width: 100%;
+        background-color: grey;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+}

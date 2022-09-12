@@ -1,3 +1,10 @@
-body {
-    width: 100vw;
+@use './styles/global' as *;
+@use './styles/mixins' as *;
+
+.App {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    width: 90vw;
+    @include centered;
+    height: 110vh;
 }

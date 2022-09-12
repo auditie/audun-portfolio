@@ -2,13 +2,11 @@
 
 
 .header {
-    margin-top: 4vh;
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 2vh 2vw 0 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 2px solid black;
 
     &__nav {
         width: 30%;
