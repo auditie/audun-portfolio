@@ -1,12 +1,16 @@
 @use '../../styles/global';
+@use '../../styles/mixins' as *;
+@use '../../styles/colors' as *;
 
 
 .header {
+    // width: 90vw;
+    @include centered;
     padding: 2vh 2vw 0 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid $light;
 
     &__nav {
         width: 30%;

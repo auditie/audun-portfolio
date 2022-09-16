@@ -9,7 +9,7 @@ const PageHeader = () => {
                 <h3 className='header__nav-page'>Projects</h3>
                 <h3 className='header__nav-page'>About</h3>
                 <h3 className='header__nav-page'>Contact</h3>
-                <h3 className='header__nav-page'>Fun</h3>
+                {/* <h3 className='header__nav-page'>Fun</h3> */}
             </div>
         </div>
     )

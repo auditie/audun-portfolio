@@ -1,9 +1,31 @@
+@use './colors' as *;
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
+body {
+    font-family: 'Poppins';
+}
+
+h1 {
+    color: $light;
+}
 
 h2 {
+    color: $light;
     margin: 0;
     padding: 1vh 2vw;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid $light;
+}
+
+h3 {
+    color: $light;
+}
+
+h4 {
+    color: $light;
+}
+
+p {
+    color: $light;
 }

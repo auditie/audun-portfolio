@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <PageHeader />
+        <div className='App__header'>
+          <PageHeader />
+        </div>
         <Switch>
           <Route path='/' exact component={HomePage} />
         </Switch>
