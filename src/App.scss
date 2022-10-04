@@ -4,7 +4,6 @@
 @use './styles/colors' as *;
 
 .App {
-    background-color: $dark;
     border-left: 2px solid $light;
     border-right: 2px solid $light;
     width: 90vw;
