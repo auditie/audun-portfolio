@@ -26,6 +26,26 @@
         &-paragraph {
             width: 40vw;
             font-size: .9em;
+            color: $light;
+        }
+
+        &-dev-skills {
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        &-dev-skill {
+            background-color: $grey;
+            display: inline;
+            width: auto;
+            height: auto;
+            padding: .5vh 1vw;
+            border-radius: 22.5px;
+            color: $dark;
+            font-size: .8em;
         }
     }
 

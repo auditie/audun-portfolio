@@ -1,9 +1,11 @@
 import { Component } from "react";
 import './HomePage.scss';
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
+// import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 class HomePage extends Component {
     render() {
+        const devSkills = ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'DOM', 'REACT.JS', 'JSX', 'NODE.JS', 'EXPRESS.JS', 'REST APIS', 'AXIOS', 'GIT', 'GITHUB', 'MYSQL', 'JIRA', 'AGILE METHODOLOGIES', 'FIGMA', 'ILLUSTRATOR', 'PHOTOSHOP', 'INDESIGN'];
+
         return (
             <div className='home-page'>
                 <div className='home-page__about'>
@@ -16,14 +18,21 @@ class HomePage extends Component {
                         Fanny pack bodega boys letterpress butcher art party bespoke drinking vinegar post-ironic readymade bicycle rights vice green juice mustache man bun wolf. Praxis iceland heirloom tilde fam. Adaptogen flexitarian mlkshk, twee same mukbang try-hard.
                         </p>
                     </div>
+                    <div className="home-page__about-dev-skills">
+                        {
+                            devSkills.map(skill => 
+                                <h3 className='home-page__about-dev-skill'>{skill}</h3>
+                            )
+                        }
+                    </div>
                 </div>
                 <div className='home-page__projects'>
-                    <h2 className='home-page__projects-title'>Projects</h2>
+                    <h2 className='home-page__projects-title'>PROJECTS</h2>
                     <div className='home-page__projects-cards'>
                     </div>
                 </div>
                 <div className='home-page__contact'>
-                    <h2 className='home-page__contact-title'>Contact</h2>
+                    <h2 className='home-page__contact-title'>CONTACT</h2>
 
                 </div>
                 <footer className='home-page__footer'>
