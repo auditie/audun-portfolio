@@ -8,6 +8,12 @@
         padding: 4vh 2vw;
         padding-bottom: 13vh;
 
+        &-split {
+            display: flex;
+            flex-direction: row;
+            gap: 4vw;
+        }
+
         &-title {
             font-size: 7vh;
             margin: 0;
@@ -15,6 +21,11 @@
             @include tablet {
                 font-size: 10vh;
             }
+        }
+
+        &-paragraph {
+            width: 40vw;
+            font-size: .9em;
         }
     }
 

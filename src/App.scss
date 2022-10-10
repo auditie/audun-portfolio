@@ -3,10 +3,6 @@
 @use './styles/fonts' as *;
 @use './styles/colors' as *;
 
-.App {
-    border-left: 2px solid $light;
-    border-right: 2px solid $light;
-    width: 90vw;
-    @include centered;
-    height: 110vh;
+* {
+    margin: 0;
 }

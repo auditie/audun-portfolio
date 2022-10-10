@@ -2,14 +2,22 @@
 
 .project {
     padding: 1vh 2vw;
-    width: 33%.33;
-    height: auto;
     display: flex;
     flex-direction: row;
+    gap: 3vw;
     // border: 1px solid black;
+
+    &__overview {
+        width: 50%;
+    }
+
+    &__about {
+        width: 50%;
+    }
 
     &__image {
         height: 25vh;
+        width: 20vw;
         width: 100%;
         background-color: grey;
     }
