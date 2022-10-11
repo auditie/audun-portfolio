@@ -29,28 +29,31 @@ class HomePage extends Component {
                         }
                     </div>
                 </div>
-                <div className='home-page__projects'>
-                    <h2 className='home-page__projects-title'>PROJECTS</h2>
-                    <div className='home-page__projects-cards'>
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
+                <section id="projects">
+                    <div className='home-page__projects'>
+                        <h2 className='home-page__projects-title'>PROJECTS</h2>
+                        <div className='home-page__projects-cards'>
+                            <ProjectCard />
+                            <ProjectCard />
+                            <ProjectCard />
+                            <ProjectCard />
+                            <ProjectCard />
+                            <ProjectCard />
+                        </div>
                     </div>
-                </div>
-                <div className='home-page__contact'>
-                    <h2 className='home-page__contact-title'>CONTACT</h2>
-                    <div className="home-page__contact__links">
-                        {
-                            contactInfo.map( contact =>
-                                    <ContactLink key={contact.id} contact={contact} />
-                                )
-                        }
+                </section>
+                <section id="contact">
+                    <div className='home-page__contact'>
+                        <h2 className='home-page__contact-title'>CONTACT</h2>
+                        <div className="home-page__contact__links">
+                            {
+                                contactInfo.map( contact =>
+                                        <ContactLink key={contact.id} contact={contact} />
+                                    )
+                            }
+                        </div>
                     </div>
-
-                </div>
+                </section>
                 <footer className='home-page__footer'>
                     {/* create current year funciton for footer */}
                     <p className="home-page__footer-text">©AUDUN YOUNG {currentYear}</p>

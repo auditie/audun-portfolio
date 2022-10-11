@@ -20,13 +20,18 @@
         margin-top: 1vh;
 
         @include tablet {
-            width: 25%;
+            width: 28%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
         }
 
+        @include desktop {
+            width: 20%;
+        }
+
         &-page {
+            text-decoration: none;
             color: $light;
             font-size: .8em;
             font-weight: normal;
