@@ -1,6 +1,6 @@
 import { Component } from "react";
 import './HomePage.scss';
-// import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 class HomePage extends Component {
     render() {
@@ -29,6 +29,12 @@ class HomePage extends Component {
                 <div className='home-page__projects'>
                     <h2 className='home-page__projects-title'>PROJECTS</h2>
                     <div className='home-page__projects-cards'>
+                        <ProjectCard />
+                        <ProjectCard />
+                        <ProjectCard />
+                        <ProjectCard />
+                        <ProjectCard />
+                        <ProjectCard />
                     </div>
                 </div>
                 <div className='home-page__contact'>

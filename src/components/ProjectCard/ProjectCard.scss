@@ -1,31 +1,45 @@
 @use '../../styles/global';
+@use '../../styles/colors' as *;
 
 .project {
-    padding: 1vh 2vw;
-    display: flex;
-    flex-direction: row;
-    gap: 3vw;
-    // border: 1px solid black;
+    color: $dark;
+    padding: 2vh 2vw;
+    background-color: $grey;
+    width: 28vw;
+    border-radius: 22.5px;
 
-    &__overview {
-        width: 50%;
+    &:hover {
+        // set this up so it picks a random color, would be very cool
     }
 
-    &__about {
-        width: 50%;
+    &__title {
+        font-size: 1em;
+        padding-bottom: .5vh;
     }
 
-    &__image {
-        height: 25vh;
-        width: 20vw;
-        width: 100%;
-        background-color: grey;
+    &__date {
+        font-size: .8em;
+        font-weight: lighter;
+        padding-bottom: .3vh;
+    }
+
+    &__description {
+        font-size: .8em;
+        padding-bottom: .8vh;
     }
 
     &__links {
         display: flex;
         flex-direction: row;
-        gap: 15px;
-    }
+        gap: 4vw;
 
+        &-direct {
+            text-decoration: underline;
+            color: $dark;
+
+            &:hover {
+                color: $light;
+            }
+        }
+    }
 }
