@@ -5,10 +5,19 @@
 .contact-link {
     background-color: $grey;
     border-radius: 22.5px;
-    padding: 1vh 1.5vw;
+    padding: 1vh 2vw;
+
+    @include desktop {
+        padding: 1vh 1.5vw;
+    }
 
     &__direct {
         text-decoration: none;
         color: $dark;
+        font-size: 1.3em;
+
+        @include desktop {
+
+        }
     }
 }

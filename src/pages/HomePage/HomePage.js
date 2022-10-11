@@ -6,6 +6,7 @@ import contactInfo from '../../data/contact-info.json';
 
 class HomePage extends Component {
     render() {
+        let currentYear = new Date().getFullYear();
         const devSkills = ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'DOM', 'REACT.JS', 'JSX', 'NODE.JS', 'EXPRESS.JS', 'REST APIS', 'AXIOS', 'GIT', 'GITHUB', 'MYSQL', 'JIRA', 'AGILE METHODOLOGIES', 'FIGMA', 'ILLUSTRATOR', 'PHOTOSHOP', 'INDESIGN'];
 
         return (
@@ -52,7 +53,7 @@ class HomePage extends Component {
                 </div>
                 <footer className='home-page__footer'>
                     {/* create current year funciton for footer */}
-                    <p className="home-page__footer-text">©AUDUN YOUNG 2022</p>
+                    <p className="home-page__footer-text">©AUDUN YOUNG {currentYear}</p>
                 </footer>
             </div>
         )

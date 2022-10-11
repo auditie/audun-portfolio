@@ -6,9 +6,9 @@ const PageHeader = () => {
         <div className='header'>
             <h1 className='header__logo'>AUDUN LOLA</h1>
             <div className='header__nav'>
-                <h3 className='header__nav-page'>Projects</h3>
-                <h3 className='header__nav-page'>Contact</h3>
-                <h3 className='header__nav-page'>About</h3>
+                <h3 className='header__nav-page'>PROJECTS</h3>
+                <h3 className='header__nav-page'>CONTACT</h3>
+                <h3 className='header__nav-page'>ABOUT</h3>
             </div>
         </div>
     )

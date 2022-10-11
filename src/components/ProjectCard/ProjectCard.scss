@@ -1,37 +1,71 @@
 @use '../../styles/global';
 @use '../../styles/colors' as *;
+@use '../../styles/mixins' as *;
 
 .project {
     color: $dark;
     padding: 2vh 2vw;
     background-color: $grey;
-    width: 28vw;
     border-radius: 22.5px;
+    width: 90vw;
+
+    @include tablet {
+        width: 28vw;
+    }
 
     &:hover {
-        // set this up so it picks a random color, would be very cool
+        // idk
+        // background-color: $light;
+    }
+
+    &__about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: .5vh;
+        padding-right: 1vw;
+
+        @include tablet {
+            flex-direction: column;
+        }
     }
 
     &__title {
-        font-size: 1em;
-        padding-bottom: .5vh;
+        font-size: 1.35em;
+
+        @include tablet {
+            padding-bottom: .5vh;
+            font-size: 1em;
+        }
     }
 
     &__date {
-        font-size: .8em;
-        font-weight: lighter;
-        padding-bottom: .3vh;
+        color: $light;
+        font-size: 1em;
+        font-weight: normal;
+        padding-top: .5vh;
+
+        @include tablet {
+            font-size: .8em;
+            padding-bottom: .3vh;
+            padding-top: 0;;
+        }
     }
 
     &__description {
-        font-size: .8em;
+        font-size: 1.2em;
         padding-bottom: .8vh;
+
+        @include tablet {
+            font-size: .8em;
+        }
     }
 
     &__links {
         display: flex;
         flex-direction: row;
         gap: 4vw;
+        font-size: 1.3em;
 
         &-direct {
             text-decoration: underline;
@@ -39,6 +73,10 @@
 
             &:hover {
                 color: $light;
+            }
+
+            @include tablet {
+                font-size: .8em;
             }
         }
     }
