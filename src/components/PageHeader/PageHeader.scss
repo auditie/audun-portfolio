@@ -4,13 +4,13 @@
 
 
 .header {
+    color: $light;
     // width: 90vw;
     @include centered;
     padding: 2vh 2vw 0 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 2px solid $light;
 
     &__nav {
         display: none;
