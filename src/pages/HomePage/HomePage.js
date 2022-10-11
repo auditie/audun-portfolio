@@ -2,6 +2,7 @@ import { Component } from "react";
 import './HomePage.scss';
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import ContactLink from "../../components/ContactLinks/ContactLink";
+import contactInfo from '../../data/contact-info.json';
 
 class HomePage extends Component {
     render() {
@@ -41,10 +42,11 @@ class HomePage extends Component {
                 <div className='home-page__contact'>
                     <h2 className='home-page__contact-title'>CONTACT</h2>
                     <div className="home-page__contact__links">
-                        <ContactLink />
-                        <ContactLink />
-                        <ContactLink />
-                        <ContactLink />
+                        {
+                            contactInfo.map( contact =>
+                                    <ContactLink key={contact.id} contact={contact} />
+                                )
+                        }
                     </div>
 
                 </div>

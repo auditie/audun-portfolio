@@ -1,3 +1,14 @@
 @use '../../styles/global';
 @use '../../styles/mixins' as *;
 @use '../../styles/colors' as *;
+
+.contact-link {
+    background-color: $grey;
+    border-radius: 22.5px;
+    padding: 1vh 1.5vw;
+
+    &__direct {
+        text-decoration: none;
+        color: $dark;
+    }
+}

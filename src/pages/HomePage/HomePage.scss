@@ -67,7 +67,18 @@
     }
 
     &__contact {
+        padding: 4vh 2vw;
+        padding-bottom: 7vh;
+
         &-title {
+            padding: 0;
+            padding-bottom: 1vh;
+        }
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
         }
     }
 }
