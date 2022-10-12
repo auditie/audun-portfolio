@@ -7,7 +7,7 @@ import contactInfo from '../../data/contact-info.json';
 class HomePage extends Component {
     render() {
         let currentYear = new Date().getFullYear();
-        const devSkills = ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'DOM', 'REACT.JS', 'JSX', 'NODE.JS', 'EXPRESS.JS', 'REST APIS', 'AXIOS', 'GIT', 'GITHUB', 'MYSQL', 'JIRA', 'AGILE METHODOLOGIES', 'FIGMA', 'ILLUSTRATOR', 'PHOTOSHOP', 'INDESIGN'];
+        const devSkills = ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'DOM', 'REACT.JS', 'JSX', 'NODE.JS', 'EXPRESS.JS', 'REST APIS', 'AXIOS', 'GIT', 'GITHUB', 'MYSQL', 'JIRA', 'AGILE METHODOLOGIES', 'FIGMA', 'ILLUSTRATOR', 'PHOTOSHOP', 'INDESIGN', '100+ WPM'];
 
         return (
             <div className='home-page'>

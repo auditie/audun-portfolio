@@ -3,9 +3,18 @@
 @use '../../styles/colors' as *;
 
 .home-page {
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+
+    @include tablet {
+        // padding: 4vh 2vw;
+    } 
 
     &__about {
-        padding: 4vh 2vw;
+        // padding: 4vh 2vw;
         padding-bottom: 7vh;
 
         &-split {
@@ -70,20 +79,20 @@
     &__projects{
 
         &-cards {
-            padding-left: 2vw;
             display: flex;
             flex-direction: column;
-            gap: 2vw;
+            gap: 4vw;
 
             @include tablet {
                 flex-direction: row;
                 flex-wrap: wrap;
+                gap: 2vw;
             }
         }
     }
 
     &__contact {
-        padding: 4vh 2vw;
+        padding-top: 7vh;
         padding-bottom: 7vh;
 
         &-title {
@@ -99,7 +108,7 @@
     }
 
     &__footer {
-        padding: 2vh 2vw;
+        padding: 2vh 0;
         &-text {
             color: $light;
             font-size: 1em;
