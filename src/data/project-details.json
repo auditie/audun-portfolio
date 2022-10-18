@@ -1,36 +1,48 @@
 [
     {
-        "title": "MCC Site",
+        "key": 1,
+        "title": "MCC SITE",
+        "date": "SEP 2022 - CURRENT",
         "description": "",
         "github": "https://github.com/auditie/mcc-client",
         "website": ""
     },
     {
-        "title": "",
+        "key": 2,
+        "title": "PROJECT NAME",
+        "date": "DAY/MO/YEAR",
         "description": "",
         "github": "",
         "website": ""
     },
     {
-        "title": "",
+        "key": 3,
+        "title": "PROJECT NAME",
+        "date": "DAY/MO/YEAR",
         "description": "",
         "github": "",
         "website": ""
     },
     {
-        "title": "",
+        "key": 4,
+        "title": "PROJECT NAME",
+        "date": "DAY/MO/YEAR",
         "description": "",
         "github": "",
         "website": ""
     },
     {
-        "title": "",
+        "key": 5,
+        "title": "PROJECT NAME",
+        "date": "DAY/MO/YEAR",
         "description": "",
         "github": "",
         "website": ""
     },
     {
-        "title": "",
+        "key": 6,
+        "title": "PROJECT NAME",
+        "date": "DAY/MO/YEAR",
         "description": "",
         "github": "",
         "website": ""

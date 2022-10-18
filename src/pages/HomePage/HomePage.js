@@ -3,6 +3,7 @@ import './HomePage.scss';
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import ContactLink from "../../components/ContactLinks/ContactLink";
 import contactInfo from '../../data/contact-info.json';
+import projects from '../../data/project-details.json';
 
 class HomePage extends Component {
     render() {
@@ -33,12 +34,17 @@ class HomePage extends Component {
                     <div className='home-page__projects'>
                         <h2 className='home-page__projects-title'>PROJECTS</h2>
                         <div className='home-page__projects-cards'>
+                            {
+                                projects.map( project =>
+                                    <ProjectCard key={project.id} project={project} />
+                                    )
+                            }
+                            {/* <ProjectCard />
                             <ProjectCard />
                             <ProjectCard />
                             <ProjectCard />
                             <ProjectCard />
-                            <ProjectCard />
-                            <ProjectCard />
+                            <ProjectCard /> */}
                         </div>
                     </div>
                 </section>
@@ -54,6 +60,9 @@ class HomePage extends Component {
                         </div>
                     </div>
                 </section>
+                <div className="home-page__experience">
+
+                </div>
                 <footer className='home-page__footer'>
                     {/* create current year funciton for footer */}
                     <p className="home-page__footer-text">©AUDUN YOUNG {currentYear}</p>

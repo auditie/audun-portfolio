@@ -1,17 +1,17 @@
 import './ProjectCard.scss';
 
 
-const ProjectCard = () => {
+const ProjectCard = ({ project }) => {
     return (
         <div className='project'>
             <div className='project__about'>
-                <h3 className='project__title'>PROJECT NAME</h3>
-                <h4 className='project__date'>MO/DAY/YEAR</h4>
+                <h3 className='project__title'>{project.title}</h3>
+                <h4 className='project__date'>{project.date}</h4>
             </div>
-            <p className='project__description'>Praxis iceland heirloom tilde fam. Adaptogen flexitarian mlkshk, twee same mukbang try-hard leggings gatekeep poutine activated charcoal flannel. </p>
+            <p className='project__description'>{project.description} </p>
             <div className='project__links'>
-                <a href='/' className='project__links-direct'>GITHUB</a>
-                <a href='/' className='project__links-direct'>WEBSITE</a>
+                <a href={project.github} className='project__links-direct'>GITHUB</a>
+                <a href={project.website} className='project__links-direct'>WEBSITE</a>
             </div>
         </div>
     )
